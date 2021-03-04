@@ -40,7 +40,7 @@ function Example() {
               {({ match }) => (
                 <CSSTransition
                   in={match != null}
-                  timeout={300}
+                  timeout={3000}
                   classNames="page"
                   unmountOnExit
                 >
