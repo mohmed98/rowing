@@ -10,9 +10,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
 const routes = [
-  { path: "/", name: "Home", Component: Home },
-  { path: "/rowingTypes", name: "RowingTypes", Component: RowingTypes },
-  { path: "/whyRowing", name: "WhyRowing", Component: WhyRowing },
+  { path: "/", name: "HOME", Component: Home },
+  { path: "/rowingTypes", name: "ROWING TYPES", Component: RowingTypes },
+  { path: "/whyRowing", name: "WHY ROWING", Component: WhyRowing },
 ];
 
 function Example() {
@@ -34,6 +34,7 @@ function Example() {
             ))}
           </Nav>
         </Navbar>
+
         <Container className="container">
           {routes.map(({ path, Component }) => (
             <Route key={path} exact path={path}>

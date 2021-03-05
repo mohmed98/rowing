@@ -1,9 +1,4 @@
-import { motion, useElementScroll } from "framer-motion";
-import React, { useRef } from "react";
-
 function RowingTypes() {
-  const ref = useRef();
-  const { scrollYProgress } = useElementScroll(ref);
   return (
     <>
       <h1>rowingTypes</h1>
@@ -14,14 +9,6 @@ function RowingTypes() {
         nulla, eleifend eget dui faucibus, facilisis aliquet ante. Suspendisse
         sollicitudin nibh lacus, ut bibendum risus elementum a.
       </p>
-      <div ref={ref}>
-        <motion.div
-          style={{ scaleX: scrollYProgress }}
-          animate={{ scale: 0.5 }}
-        >
-          HEllo
-        </motion.div>
-      </div>
     </>
   );
 }

@@ -17,7 +17,7 @@
 .page-enter-active {
   opacity: 1;
   transform: translateX(0);
-  transition: all 2000ms;
+  transition: opacity 2000ms, transfrom 2000ms;
 }
 
 .page-exit {
@@ -39,10 +39,23 @@
 .topElement {
   position: absolute;
 }
-.topElement {
-  z-index: 5;
-}
+
 .lastElement {
-  width: 700px;
+  width: 1000px;
   margin: auto;
+}
+.animatedBtn {
+  cursor: pointer;
+  width: 5rem;
+  height: 3rem;
+  margin: auto;
+  text-align: center;
+  padding-top: 0.75rem;
+  border-radius: 10px;
+  border: 1px black solid;
+}
+.card {
+  width: 500px;
+  margin: auto;
+  margin-top: 2rem;
 }

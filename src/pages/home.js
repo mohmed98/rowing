@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Image } from "react-bootstrap";
+import { Image, Card } from "react-bootstrap";
 
 function Home() {
   const [shouldAnimate, setShouldAnimate] = useState(false);
@@ -37,13 +37,27 @@ function Home() {
           animate={{ opacity: shouldAnimate ? 0 : 1 }}
           initial={{ opacity: 0 }}
         >
-          <p>
-            Donec sit amet augue at enim sollicitudin porta. Praesent finibus ex
-            velit, quis faucibus libero congue et. Quisque convallis eu nisl et
-            congue. Vivamus eget augue quis ante malesuada ullamcorper. Sed orci
-            nulla, eleifend eget dui faucibus, facilisis aliquet ante.
-            Suspendisse sollicitudin nibh lacus, ut bibendum risus elementum a.
-          </p>
+          <Card>
+            <Card.Header>Rwoing</Card.Header>
+            <Card.Body>
+              {/* <Card.Title>Special title treatment</Card.Title> */}
+              <Card.Text>
+                Rwoing is a sport whose origins reach back to Ancient Egyptian
+                times. It involves propelling a boat (racing shell) on water
+                using oars.
+              </Card.Text>
+              <motion.div
+                whileHover={{
+                  backgroundColor: "green",
+                  color: "#fff",
+                  border: "none",
+                }}
+                className="animatedBtn"
+              >
+                hover me
+              </motion.div>
+            </Card.Body>
+          </Card>
         </motion.div>
       </div>
     </>
